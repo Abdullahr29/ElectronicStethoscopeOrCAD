@@ -1,0 +1,370 @@
+
+**** 02/11/19 20:56:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC9-Stetho"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic9\stetho.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Stetho.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of H:\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC9.net" 
+
+
+
+**** INCLUDING SCHEMATIC9.net ****
+* source AREHMANSPICELABS
+V_V1         N01945 0 15
+X_U1A         0 N01909 N01945 N01959 N01919 OP-471A
+R_R1         N01899 N01909  1k TC=0,0 
+R_R2         N01909 N01919  170k TC=0,0 
+V_V2         0 N01959 15
+R_R4         N02454 N02464  5k TC=0,0 
+V_V5         0 N02504 15
+X_U1B         0 N02454 N02490 N02504 N02464 OP-471A
+R_R3         N01919 N02454  1k TC=0,0 
+V_V4         N02490 0 15
+R_R10         N03889 0  53051.65 TC=0,0 
+R_R8         N03925 N03871  26525.8 TC=0,0 
+R_R7         N03202 N03126  7957.75 TC=0,0 
+V_V8         N03106 0 15
+V_V11         N03851 0 15
+C_C1         N03152 N03126  100n  TC=0,0 
+C_C2         0 N03156  100n  TC=0,0 
+V_V9         0 N03116 15
+V_V12         0 N03861 15
+R_R5         N02464 N03152  3978.9 TC=0,0 
+R_R9         N03885 N03871  53051.65 TC=0,0 
+X_U1C         N03156 N03202 N03106 N03116 N03126 OP-471A
+C_C4         N03885 N03889  100n  TC=0,0 
+X_U1D         N03889 N03925 N03851 N03861 N03871 OP-471A
+R_R6         N03152 N03156  3978.9 TC=0,0 
+C_C3         N03126 N03885  100n  TC=0,0 
+X_U2A         N03871 N04462 N04430 N04438 N04450 OP-471A
+V_V13         N04430 0 15
+R_R11         N04462 N04450  13k TC=0,0 
+R_R12         0 N04462  1 TC=0,0 
+V_V14         0 N04438 15
+V_V16         0 N05026 10
+R_R16         N04962 N04990  5k TC=0,0 
+R_R13         N04450 N04962  28.6k TC=0,0 
+X_U2B         N05018 N04962 N05038 N05026 N04990 OP-471A
+R_R17         0 N05018  5k TC=0,0 
+V_V15         N05038 0 10
+R_R15         N04950 N04962  28.6k TC=0,0 
+V_V18         0 N04950 13.9
+V_V19         N01899 0  AC 0
++SIN 0 3m 200 0 0 0
+
+**** RESUMING Stetho.cir ****
+.END
+
+**** 02/11/19 20:56:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC9-Stetho"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic9\stetho.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        X_U1B.dx        X_U1B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U1C.dx        X_U1C.dy        X_U1D.dx        X_U1D.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U2A.dx        X_U2A.dy        X_U2B.dx        X_U2B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 02/11/19 20:56:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC9-Stetho"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic9\stetho.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.qx        X_U1B.qx        X_U1C.qx        X_U1D.qx        
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF    7.500000E+03    7.500000E+03    7.500000E+03    7.500000E+03 
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               0               0            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+               X_U2A.qx        X_U2B.qx        
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF    7.500000E+03    7.500000E+03 
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 02/11/19 20:56:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC9-Stetho"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic9\stetho.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01899)    0.0000 (N01909) 733.0E-09 (N01919)     .0028 (N01945)   15.0000     
+
+(N01959)  -15.0000 (N02454) 763.1E-09 (N02464)    -.0141 (N02490)   15.0000     
+
+(N02504)  -15.0000 (N03106)   15.0000 (N03116)  -15.0000 (N03126)    -.0141     
+
+(N03152)    -.0141 (N03156)    -.0142 (N03202)    -.0142 (N03851)   15.0000     
+
+(N03861)  -15.0000 (N03871)-421.7E-06 (N03885)-421.7E-06 (N03889)-844.8E-06     
+
+(N03925)-844.0E-06 (N04430)   15.0000 (N04438)  -15.0000 (N04450)   -5.3482     
+
+(N04462)-411.4E-06 (N04950)  -13.9000 (N04962)-84.90E-06 (N04990)    3.3650     
+
+(N05018)-79.65E-06 (N05026)  -10.0000 (N05038)   10.0000 (X_U1A.6)-618.1E-09    
+
+(X_U1A.7)     .0028                   (X_U1A.8)     .0028                       
+
+(X_U1A.9)    0.0000                   (X_U1B.6) 3.070E-06                       
+
+(X_U1B.7)    -.0141                   (X_U1B.8)    -.0141                       
+
+(X_U1B.9)    0.0000                   (X_U1C.6) 3.069E-06                       
+
+(X_U1C.7)    -.0141                   (X_U1C.8)    -.0141                       
+
+(X_U1C.9)    0.0000                   (X_U1D.6) 91.92E-09                       
+
+(X_U1D.7)-421.6E-06                   (X_U1D.8)-421.6E-06                       
+
+(X_U1D.9)    0.0000                   (X_U2A.6)     .0012                       
+
+(X_U2A.7)   -5.3482                   (X_U2A.8)   -5.3482                       
+
+(X_U2A.9)    0.0000                   (X_U2B.6)-733.7E-06                       
+
+(X_U2B.7)    3.3651                   (X_U2B.8)    3.3651                       
+
+(X_U2B.9)    0.0000                   (X_U1A.10)    -.7373                      
+
+(X_U1A.11)   14.9020                  (X_U1A.12)   14.9020                      
+
+(X_U1A.13)    -.6655                  (X_U1A.14)    -.6655                      
+
+(X_U1A.53)   13.0000                  (X_U1A.54)  -13.0000                      
+
+(X_U1A.90)     .0028                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    0.0000                      
+
+(X_U1B.10)    -.7373                  (X_U1B.11)   14.9020                      
+
+(X_U1B.12)   14.9020                  (X_U1B.13)    -.6655                      
+
+(X_U1B.14)    -.6655                  (X_U1B.53)   13.0000                      
+
+(X_U1B.54)  -13.0000                  (X_U1B.90)    -.0028                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    0.0000                  (X_U1C.10)    -.7515                      
+
+(X_U1C.11)   14.9020                  (X_U1C.12)   14.9020                      
+
+(X_U1C.13)    -.6797                  (X_U1C.14)    -.6797                      
+
+(X_U1C.53)   13.0000                  (X_U1C.54)  -13.0000                      
+
+(X_U1C.90) 15.92E-06                  (X_U1C.91)   25.0000                      
+
+(X_U1C.92)  -25.0000                  (X_U1C.99)    0.0000                      
+
+(X_U1D.10)    -.7381                  (X_U1D.11)   14.9020                      
+
+(X_U1D.12)   14.9020                  (X_U1D.13)    -.6663                      
+
+(X_U1D.14)    -.6663                  (X_U1D.53)   13.0000                      
+
+(X_U1D.54)  -13.0000                  (X_U1D.90) 31.85E-06                      
+
+(X_U1D.91)   25.0000                  (X_U1D.92)  -25.0000                      
+
+(X_U1D.99)    0.0000                  (X_U2A.10)    -.7377                      
+
+(X_U2A.11)   14.9020                  (X_U2A.12)   14.9020                      
+
+(X_U2A.13)    -.6659                  (X_U2A.14)    -.6659                      
+
+(X_U2A.53)   13.0000                  (X_U2A.54)  -13.0000                      
+
+(X_U2A.90)    -.5984                  (X_U2A.91)   25.0000                      
+
+(X_U2A.92)  -25.0000                  (X_U2A.99)    0.0000                      
+
+(X_U2B.10)    -.7374                  (X_U2B.11)    9.9024                      
+
+(X_U2B.12)    9.9024                  (X_U2B.13)    -.6656                      
+
+(X_U2B.14)    -.6656                  (X_U2B.53)    8.0000                      
+
+(X_U2B.54)   -8.0000                  (X_U2B.90)     .6730                      
+
+(X_U2B.91)   25.0000                  (X_U2B.92)  -25.0000                      
+
+(X_U2B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.300E-03
+    V_V2        -2.300E-03
+    V_V5        -2.300E-03
+    V_V4        -2.300E-03
+    V_V8        -2.300E-03
+    V_V11       -2.300E-03
+    V_V9        -2.300E-03
+    V_V12       -2.300E-03
+    V_V13       -2.300E-03
+    V_V14       -2.300E-03
+    V_V16       -1.614E-03
+    V_V15       -1.613E-03
+    V_V18       -4.860E-04
+    V_V19        7.330E-10
+    X_U1A.vb    -6.181E-12
+    X_U1A.vc     1.300E-11
+    X_U1A.ve     1.455E-11
+    X_U1A.vlim   2.848E-06
+    X_U1A.vlp   -2.500E-11
+    X_U1A.vln   -2.500E-11
+    X_U1B.vb     3.070E-11
+    X_U1B.vc     1.301E-11
+    X_U1B.ve     1.454E-11
+    X_U1B.vlim  -2.800E-06
+    X_U1B.vlp   -2.500E-11
+    X_U1B.vln   -2.500E-11
+    X_U1C.vb     3.069E-11
+    X_U1C.vc     1.301E-11
+    X_U1C.ve     1.329E-11
+    X_U1C.vlim   1.592E-08
+    X_U1C.vlp   -2.500E-11
+    X_U1C.vln   -2.500E-11
+    X_U1D.vb     9.192E-13
+    X_U1D.vc     1.300E-11
+    X_U1D.ve     1.455E-11
+    X_U1D.vlim   3.185E-08
+    X_U1D.vlp   -2.500E-11
+    X_U1D.vln   -2.500E-11
+    X_U2A.vb     1.166E-08
+    X_U2A.vc     1.835E-11
+    X_U2A.ve     9.204E-12
+    X_U2A.vlim  -5.984E-04
+    X_U2A.vlp   -2.560E-11
+    X_U2A.vln   -2.440E-11
+    X_U2B.vb    -7.337E-09
+    X_U2B.vc     4.636E-12
+    X_U2B.ve     1.155E-11
+    X_U2B.vlim   6.730E-04
+    X_U2B.vlp   -2.433E-11
+    X_U2B.vln   -2.567E-11
+
+    TOTAL POWER DISSIPATION   3.84E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/11/19 20:56:30 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC9-Stetho"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic9\stetho.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .19
+

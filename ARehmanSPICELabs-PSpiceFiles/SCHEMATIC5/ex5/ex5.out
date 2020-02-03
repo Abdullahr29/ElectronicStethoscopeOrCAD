@@ -1,0 +1,176 @@
+
+**** 02/10/19 13:44:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC5-ex5"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic5\ex5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ex5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of H:\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC5.net" 
+
+
+
+**** INCLUDING SCHEMATIC5.net ****
+* source AREHMANSPICELABS
+V_V1         N00335 0 15
+V_V2         0 N00350 15
+R_R1         N00254 N00261  10k TC=0,0 
+R_R2         N00261 N00275  5k TC=0,0 
+X_U1A         0 N00261 N00335 N00350 N00275 OP-471A
+V_V3         N00254 0  
++SIN 0 1 1000 0 0 0
+
+**** RESUMING ex5.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nom.ind for library file nom.lib.
+
+INFO(ORPSIM-15422): Making new index file nom.ind for library file nom.lib.
+
+Index has 33530 entries from 201 file(s).
+
+**** 02/10/19 13:44:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC5-ex5"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic5\ex5.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        
+          IS  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 02/10/19 13:44:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC5-ex5"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic5\ex5.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.qx        
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF    7.500000E+03 
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 02/10/19 13:44:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC5-ex5"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic5\ex5.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00254)    0.0000 (N00261) 737.9E-09 (N00275) 80.73E-06 (N00335)   15.0000     
+
+(N00350)  -15.0000 (X_U1A.6)-17.60E-09                   (X_U1A.7) 80.73E-06    
+
+(X_U1A.8) 80.73E-06                   (X_U1A.9)    0.0000                       
+
+(X_U1A.10)    -.7373                  (X_U1A.11)   14.9020                      
+
+(X_U1A.12)   14.9020                  (X_U1A.13)    -.6655                      
+
+(X_U1A.14)    -.6655                  (X_U1A.53)   13.0000                      
+
+(X_U1A.54)  -13.0000                  (X_U1A.90) 16.00E-06                      
+
+(X_U1A.91)   25.0000                  (X_U1A.92)  -25.0000                      
+
+(X_U1A.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.300E-03
+    V_V2        -2.300E-03
+    V_V3         7.379E-11
+    X_U1A.vb    -1.760E-13
+    X_U1A.vc     1.300E-11
+    X_U1A.ve     1.330E-11
+    X_U1A.vlim   1.600E-08
+    X_U1A.vlp   -2.500E-11
+    X_U1A.vln   -2.500E-11
+
+    TOTAL POWER DISSIPATION   6.90E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/10/19 13:44:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC5-ex5"  [ H:\Documents\Labs\arehmanspicelabs-pspicefiles\schematic5\ex5.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.58
+

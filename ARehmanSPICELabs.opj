@@ -1,0 +1,173 @@
+(ExpressProject "ARehmanSPICELabs"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\arehmanspicelabs.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\arehmanspicelabs-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic2\schematic2.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic3\schematic3.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic4\schematic4.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic5\schematic5.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic6\schematic6.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic7\schematic7.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic8\schematic8.net"
+      (Type "Report"))
+    (File ".\arehmanspicelabs-pspicefiles\schematic9\schematic9.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic\scope.sim"
+        (DisplayName "SCHEMATIC-Scope")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic1\run.sim"
+        (DisplayName "SCHEMATIC1-Run")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic2\run.sim"
+        (DisplayName "SCHEMATIC2-run")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic3\ex3.sim"
+        (DisplayName "SCHEMATIC3-ex3")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic4\ex4.sim"
+        (DisplayName "SCHEMATIC4-ex4")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic5\ex5.sim"
+        (DisplayName "SCHEMATIC5-ex5")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic6\ex6.sim"
+        (DisplayName "SCHEMATIC6-ex6")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic7\ex7.sim"
+        (DisplayName "SCHEMATIC7-ex7")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic8\ex8.sim"
+        (DisplayName "SCHEMATIC8-ex8")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\arehmanspicelabs-pspicefiles\schematic9\stetho.sim"
+        (DisplayName "SCHEMATIC9-Stetho")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\arehmanspicelabs-pspicefiles\schematic9\stetho.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IAC
+      (FullPartName "IAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (OP-471A
+      (FullPartName "OP-471A.Normal")
+      (LibraryName "\\ICNAS2.CC.IC.AC.UK\AYR18\DOWNLOADS\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LM324
+      (FullPartName "LM324.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    ("OPAMP DUAL SUPPLY"
+      (FullPartName "OPAMP DUAL SUPPLY.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LM324X2/SO
+      (FullPartName "LM324X2/SO.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (OP-07
+      (FullPartName "OP-07.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (ISIN
+      (FullPartName "ISIN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (E
+      (FullPartName "E.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (CAPACITOR
+      (FullPartName "CAPACITOR.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "\\icnas2.cc.ic.ac.uk\ayr18\downloads")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "H:\Documents\Labs\arehmanspicelabs.dsn")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 421"))
+      (Tab 0)))
+  (MPSSessionName "ayr18"))
